@@ -3,13 +3,65 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --background-color: #1b1e1e;
+  --text-color: #f8f8f2;
+  --primary-color: #66d9ef;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.contact-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--text-color);
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+tr:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.selected-contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.selected-contact-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.selected-contact-container p {
+  margin-bottom: 10px;
+}
+
+.selected-contact-container button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }

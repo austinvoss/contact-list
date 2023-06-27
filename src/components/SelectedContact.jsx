@@ -23,7 +23,7 @@ export default function SelectedContact({ selectedContactId }) {
   }
 
   return (
-    <div>
+    <div className="selected-contact-container">
       <h2>Contact Details</h2>
       <p>Name: {selectedContact.name}</p>
       <p>Email: {selectedContact.email}</p>
