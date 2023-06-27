@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ContactList from "./ContactList";
 
 export default function SelectedContact({ selectedContactId }) {
   const [selectedContact, setSelectedContact] = useState(null);
